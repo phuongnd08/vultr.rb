@@ -44,7 +44,7 @@ module Vultr
           destroy: [:post, '/v1/server/destroy?api_key=[api_key]', ['SUBID']],
           create: [:post, '/v1/server/create?api_key=[api_key]',
                    ['DCID', 'VPSPLANID', 'OSID', 'ipxe_chain_url', 'ISOID', 'SCRIPTID', 'SNAPSHOTID',
-                    'enable_ipv6', 'enable_private_network', 'label', 'SSHKEYID', 'auto_backups', 'APPID']],
+                    'enable_ipv6', 'enable_private_network', 'private_network', 'label', 'SSHKEYID', 'auto_backups', 'APPID']],
           list_ipv4: [:get, '/v1/server/list_ipv4?api_key=[api_key]&SUBID=[SUBID]'],
           create_ipv4: [:post, '/v1/server/create_ipv4?api_key=[api_key]', ['SUBID', 'reboot']],
           destroy_ipv4: [:post, '/v1/server/destroy_ipv4?api_key=[api_key]', ['SUBID', 'ip']],
